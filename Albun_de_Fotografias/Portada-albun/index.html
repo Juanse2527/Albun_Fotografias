@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="Images/1.png" alt="1" />
+          <h1>Enero</h1>
+          <div class="details">
+            <h2>Mike</h2>
+            <button class="boton" onclick="location.href='ruta-de-la-galeria.html'">Ver Más</button>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/2.png" alt="2" />
+          <h1>Febrero</h1>
+          <div class="details">
+            <h2>samite</h2>
+            <button class="boton" onclick="location.href='ruta-de-la-galeria.html'">Ver Más</button>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/3.png" alt="3" />
+          <h1>Marzo</h1>
+          <div class="details">
+            <h2>hashi</h2>
+            <button class="boton" onclick="location.href='ruta-de-la-galeria.html'">Ver Más</button>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/4.png" alt="4" />
+          <h1>Abril</h1>
+          <div class="details">
+            <h2>kaity</h2>
+            <button class="boton" onclick="location.href='ruta-de-la-galeria.html'">Ver Más</button>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/5.png" alt="5" />
+          <h1>Mayo</h1>
+          <div class="details">
+            <h2>lauren</h2>
+            <button class="boton" onclick="location.href='ruta-de-la-galeria.html'">Ver Más</button>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/6.png" alt="6" />
+          <h1>Junio</h1>
+          <div class="details">
+            <h2>ryan</h2>
+            <button class="boton" onclick="location.href='ruta-de-la-galeria.html'">Ver Más</button>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/7.png" alt="7" />
+          <h1>Julio</h1>
+          <div class="details">
+            <h2>dakes</h2>
+            <button class="boton" onclick="location.href='ruta-de-la-galeria.html'">Ver Más</button>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/8.png" alt="8" />
+          <h1>Agosto</h1>
+          <div class="details">
+            <h2>anna</h2>
+            <button class="boton" onclick="location.href='ruta-de-la-galeria.html'">Ver Más</button>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/9.png" alt="9" />
+          <h1>Septiembre</h1>
+          <div class="details">
+            <h2>james</h2>
+            <button class="boton" onclick="location.href='ruta-de-la-galeria.html'">Ver Más</button>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/10.png" alt="10" />
+          <h1>Octubre</h1>
+          <div class="details">
+            <h2>kira</h2>
+            <button class="boton" onclick="location.href='../Galeria-fotos/octubre/index.html'">Entrar a galeria</button>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/11.png" alt="11" />
+          <h1>Noviembre</h1>
+          <div class="details">
+            <h2>liam</h2>
+            <button class="boton" onclick="location.href='ruta-de-la-galeria.html'">Ver Más</button>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/12.png" alt="12" />
+          <h1>Diciembre</h1>
+          <div class="details">
+            <h2>zara</h2>
+            <button class="boton" onclick="location.href='ruta-de-la-galeria.html'">Ver Más</button>
+          </div>
+        </div>
+      </div>
+      <button id="reset-button">Desmarcar</button> <!-- Botón para desmarcar -->
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        $("#reset-button").on("click", function () {
+          $(".slider-img").removeClass("active"); // Desmarcar todas las imágenes
+        });
+      });
+    </script>
+  </body>
+</html>
